@@ -64,5 +64,9 @@ k8s.io/kubernetes/pkg/kubelet/nodestatus (764)
 ...
 Total Lines Of Code: 133943
 ```
+全量输出文件
+1. brew install graphviz
+2. godepq -from qim/dispatcher -o dot>a.dot 
+3. dot -Tsvg a.dot> a.svg
 
 *Note: This is not an official Google product.*
