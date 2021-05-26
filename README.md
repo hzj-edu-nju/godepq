@@ -49,6 +49,10 @@ Track down how a test package is being pulled into a production binary:
 ```
 $ godepq -from k8s.io/kubernetes/cmd/hyperkube -to net/http/httptest -all-paths -o dot | dot -Tpng -o httptest.png
 ```
+全量输出文件
+1. brew install graphviz
+2. godepq -from qim/dispatcher -o dot>a.dot 
+3. dot -Tsvg a.dot> a.svg
 
 ![example output](example.png)
 
